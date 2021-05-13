@@ -1,9 +1,8 @@
 const express = require('express');
+const { getWeatherDetails } = require('../controllers/weather');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  return res.json('HEY');
-})
+router.get('/', getWeatherDetails);
 
 module.exports = router;
