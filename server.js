@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use('/weather', weatherRouter);
+app.use('/', weatherRouter);
 
 const PORT = process.env.PORT || 4000;
 
